@@ -1,0 +1,18 @@
+"use strict"
+
+const $ = selector => document.querySelector(selector);
+
+const mpgCalculation = () => {
+const miles = $("#miles").value;
+const gallons = $("#gallons").value;
+
+ if(miles <= 0 || isNaN(miles)) {
+   alert("please input an appropriate value")
+ } else if(gallons <= 0 || isNaN(gallons)){
+   alert("please input an appropriate value")
+ } else{
+   $("#mpg").value = (miles / gallons).toFixed(2);
+ }
+};
+
+   $("#calculate").addEventListener("click",mpgCalculation);
