@@ -1,0 +1,26 @@
+"use strict"
+
+let total = 0;
+
+const score1 = parseInt(prompt("Score of the first game"));
+
+total += score1;
+
+const score2 = parseInt(prompt("Score of the second game"));
+
+total += score2;
+
+const score3 = parseInt(prompt("Score of the third game"));
+
+total += score3;
+
+const totalAvg = total/3;
+
+const html =
+ `
+<p>The score for the first game was ${score1}</p>
+<p>The score for the second game was ${score2}</p>
+<p>The score for the third game was ${score3}</p>
+<p>and combined they average a score of ${totalAvg}</p>
+ `;
+document.write(html);
